@@ -1,16 +1,50 @@
 .blog-entry-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 200px 50px minmax(1000px, max-content) 25px;
   grid-template-areas:
-  "head head head head head head head head"
-  "navi navi navi navi navi navi navi navi"
-  ".    .    blog blog blog blog .    .   "
-  "foot foot foot foot foot foot foot foot";
+  "head head head head"
+  "navi navi navi navi"
+  ".    blog blog auth"
+  "foot foot foot foot";
 }
 
 .blog-text {
   grid-area: blog;
   display: flex;
   flex-direction: column;
+}
+
+.author-box {
+  grid-area: auth;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 30px;
+  margin-top: 100px;
+  height: 250px;
+  background-color: mistyrose;
+  border-radius: 10px;
+}
+
+
+@media (max-width:901px) {
+  .blog-entry-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 50px minmax(1000px, max-content) 350px 25px;
+    grid-template-areas:
+    "head"
+    "navi"
+    "blog"
+    "auth"
+    "foot";
+  }
+
+  .author-box {
+    margin-top: 20px;
+  }
+
+  .blog-text {
+    margin: 20px;
+  }
 }
