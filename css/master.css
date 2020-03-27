@@ -45,6 +45,13 @@ img {
   box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
   margin-bottom: 20px
 }
+
+footer {
+  grid-area: foot;
+  color: grey;
+  text-align: right;
+  font-size: 14px;
+}
 /* button{
   border: none;
 }
@@ -57,7 +64,7 @@ button:focus {
 .main-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 200px 50px 1000px 100px;
+  grid-template-rows: 200px 50px minmax(1000px, max-content) 25px;
   grid-template-areas:
   "head head head head head head head head"
   "navi navi navi navi navi navi navi navi"
@@ -65,6 +72,20 @@ button:focus {
   "foot foot foot foot foot foot foot foot";
 }
 
+.photo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  grid-area: foto;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  color: darkslategray;
+}
+
+/* Navigation bar styles */
 .nav {
   font-size: 22px;
   text-decoration: none;
@@ -82,30 +103,19 @@ button:focus {
   font-weight: bold;
 }
 
+/* Convenience */
 .home-link {
   text-decoration: none;
   color: lavenderblush;
 }
 
-.photo-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  grid-area: foto;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-radius: 5px;
-  color: darkslategray;
-}
 
 /* Resposive design changes for smaller screens */
 @media (max-width:901px) {
   .main-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 50px;
+    grid-template-rows: 200px 50px minmax(300px, max-content) minmax(300px, max-content) 25px;
     grid-template-areas:
     "head head head head"
     "navi navi navi navi"
