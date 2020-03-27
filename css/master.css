@@ -65,12 +65,13 @@ button:focus {
 }
 
 .nav {
-  font-size: 25px;
+  font-size: 22px;
   text-decoration: none;
   color: white;
 }
+
 .nav:hover {
-  font-size: 25px;
+  font-size: 22px;
   text-decoration: none;
   color: gainsboro;
 }
@@ -96,4 +97,26 @@ button:focus {
   margin-left: 20px;
   border-radius: 5px;
   color: darkslategray;
+}
+
+/* Resposive design changes for smaller screens */
+@media (max-width:901px) {
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 50px;
+    grid-template-areas:
+    "head head head head"
+    "navi navi navi navi"
+    "card card card card"
+    "foto foto foto foto"
+    "foot foot foot foot";
+  }
+
+  .nav {
+    font-size: 18px;
+  }
+  .nav:hover {
+    font-size: 18px;
+  }
 }
