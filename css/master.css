@@ -40,12 +40,6 @@ nav {
   color: white;
 }
 
-img {
-  border-radius: 10px;
-  box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
-  margin-bottom: 20px
-}
-
 footer {
   grid-area: foot;
   color: grey;
@@ -82,7 +76,6 @@ button:focus {
   margin-right: 20px;
   margin-left: 20px;
   border-radius: 5px;
-  color: darkslategray;
 }
 
 /* Navigation bar styles */
@@ -109,6 +102,11 @@ button:focus {
   color: lavenderblush;
 }
 
+.gallery-img {
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+  margin-bottom: 20px
+}
 
 /* Resposive design changes for smaller screens */
 @media (max-width:901px) {

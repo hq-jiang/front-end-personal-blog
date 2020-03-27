@@ -13,6 +13,7 @@
   grid-area: blog;
   display: flex;
   flex-direction: column;
+  color: darkslategray;
 }
 
 .author-box {
@@ -22,8 +23,10 @@
   margin: 30px;
   margin-top: 100px;
   height: 250px;
-  background-color: mistyrose;
+  color: darkslategray;
+  background-color: antiquewhite;
   border-radius: 10px;
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 
