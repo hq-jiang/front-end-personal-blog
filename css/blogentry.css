@@ -1,0 +1,17 @@
+.blog-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 200px 50px 1000px 100px;
+  grid-template-areas:
+  "head head head head head head head head"
+  "navi navi navi navi navi navi navi navi"
+  ".    .    blog blog blog blog .    .   "
+  "foot foot foot foot foot foot foot foot";
+}
+
+.blog-text {
+  grid-area: blog;
+  display: flex;
+  flex-direction: column;
+  color: darkslategray;
+}

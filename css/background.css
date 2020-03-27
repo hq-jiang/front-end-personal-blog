@@ -1,0 +1,23 @@
+/*Background images*/
+.bg-sky {
+  background-image: url("../images/background/pink_sky.jpg");
+  border-radius: 10px;
+  background-size: cover;
+}
+.bg-sea {
+  background-image: url("../images/background/blue_sea.jpg");
+  border-radius: 10px;
+  background-size: cover;
+}
+.bg-flower {
+  background-image: url("../images/background/flower_2.jpg");
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.bg-island {
+  background-image: url("../images/background/island.jpg");
+  border-radius: 10px;
+  background-size: cover;
+  background-position: 20% 70%;
+}

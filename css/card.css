@@ -1,0 +1,31 @@
+.card-box {
+  display: flex;
+  flex-direction: column;
+  grid-area: card;
+  margin-left: 20px;
+}
+
+
+/*Basic elements*/
+.blog-card {
+  font-size: 18px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding: 5px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+  color: white;
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.blog-link {
+  text-decoration: none;
+}
+
+.blog-card:hover {
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.1);
+}
