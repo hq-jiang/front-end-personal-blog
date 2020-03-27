@@ -40,13 +40,17 @@ nav {
   color: white;
 }
 
-button{
+img {
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+}
+/* button{
   border: none;
 }
 
 button:focus {
   outline:0;
-}
+} */
 
 /*High level elements*/
 .main-grid {
@@ -56,7 +60,7 @@ button:focus {
   grid-template-areas:
   "head head head head head head head head"
   "navi navi navi navi navi navi navi navi"
-  "card card card card .    .    .    .   "
+  "card card card card foto foto foto foto"
   "foot foot foot foot foot foot foot foot";
 }
 
@@ -79,4 +83,17 @@ button:focus {
 .home-link {
   text-decoration: none;
   color: lavenderblush;
+}
+
+.photo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  grid-area: foto;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  color: darkslategray;
 }
