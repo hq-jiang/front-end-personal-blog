@@ -6,6 +6,13 @@
   margin-right: 10px;
 }
 
+.card-box-diary {
+  display: flex;
+  flex-direction: column;
+  grid-area: blog;
+  margin-left: 20px;
+  margin-right: 10px;
+}
 
 /*Basic elements*/
 .blog-card {
